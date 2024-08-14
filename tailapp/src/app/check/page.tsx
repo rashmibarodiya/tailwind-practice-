@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Home() {
+export default function Card() {
     const address: string = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0L9NWdjUOW6MhqpwtitJkfiIPg9HYc9Ecig&s"
     const a: string = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSWU_SFd7cHuf7WBr1QlYBtiozCXrF_hqwKg&s"
     const logo :string = "https://uploads.vw-mms.de/system/production/images/vwn/030/145/images/7a0d84d3b718c9a621100e43e581278433114c82/DB2019AL01950_web_1600.jpg?1649155356"
@@ -24,9 +24,12 @@ export default function Home() {
                         video description
                     </div>
                     <div className="text-gray-500 text-sm">
-                        <div>
+                    <button className="hover:text-black">
+  Save changes
+</button>
+                        {/* <div>
                             channel name
-                        </div>
+                        </div> */}
                         <div className="flex">
                             <div className="flex-initial w-11 ...">
                                 view
@@ -40,6 +43,7 @@ export default function Home() {
                 </div>
             </div>
 
+          
             <div className="flex">
                 <div className="flex-none w-11 ...">
                     01
